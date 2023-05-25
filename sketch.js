@@ -1,18 +1,18 @@
-let r = 255;
-let g = 255;
-let b = 255;
+let r = 0;
+let g = 0;
+let b = 0;
 
-let hourR = 0;
-let hourG = 0;
-let hourB = 0;
+let hourR = 255;
+let hourG = 255;
+let hourB = 255;
 
-let minuteR = 0;
-let minuteG = 0;
-let minuteB = 0;
+let minuteR = 200;
+let minuteG = 200;
+let minuteB = 200;
 
-let secondR = 0;
-let secondG = 0;
-let secondB = 0;
+let secondR = 150;
+let secondG = 150;
+let secondB = 150;
 
 function setup() {
   createCanvas(windowWidth, windowHeight); //this is so that the canvas is full screen
@@ -29,9 +29,7 @@ function draw() {
   let secondX = 0.75 * windowWidth;
   let minuteX = 0.5 * windowWidth;
   let hourX = 0.25 * windowWidth;
-
-  fill(255);
-
+  
   noStroke();
   fill(hourR, hourG, hourB);
   rect(hourX - 150, 0, 300, map(hr, 0, 24, 0, height));
