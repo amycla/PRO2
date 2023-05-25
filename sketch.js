@@ -1,6 +1,6 @@
-let r = 0;
-let g = 0;
-let b = 0;
+let r = 255;
+let g = 255;
+let b = 255;
 
 let hourR = 0;
 let hourG = 0;
@@ -67,19 +67,19 @@ function draw() {
   }
   //Summer - colors are yellow
   else if (m => 4 && m < 6) {
-    if (hr => 6 && hr < 12) {
+    if (hr > 5 && hr <= 11) {
       r = 255;
       g = 252;
       b = 162;
-    } else if (hr => 12 && hr < 18) {
+    } else if (hr > 11 && hr <= 17) {
       r = 245;
       g = 235;
       b = 0;
-    } else if (hr => 18 && hr < 24) {
+    } else if (hr > 17 && hr <= 23) {
       r = 255;
       g = 169;
       b = 43;
-    } else if (hr => 0 && hr < 6) {
+    } else if (hr > 0 && hr <= 5) {
       r = 93;
       g = 57;
       b = 4;
