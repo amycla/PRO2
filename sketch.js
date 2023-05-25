@@ -66,7 +66,7 @@ function draw() {
     }
   }
   //Summer - colors are yellow
-  else if (m > 4 && m < 6) {
+  else if (m > 5 && m <= 8) {
     if (hr > 5 && hr <= 11) {
       r = 255;
       g = 252;
@@ -86,7 +86,7 @@ function draw() {
     }
   }
   //Fall - colors are red
-  else if (m => 4 && m < 6) {
+  else if (m > 8 && m <= 10) {
     if (hr > 5 && hr <= 11) {
       r = 255;
       g = 163;
@@ -106,7 +106,7 @@ function draw() {
     }
   }
   //Winter - colors are blue
-  else if (m => 4 && m < 6) {
+  else if (m == 12 || m == 1) {
     if (hr > 5 && hr <= 11) {
       r = 82;
       g = 209;
