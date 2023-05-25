@@ -15,9 +15,9 @@ let secondG = 150;
 let secondB = 150;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight); //this is so that the canvas is full screen
+  createCanvas(windowWidth, windowHeight);
 }
-
+x
 function draw() {
   background(r, g, b);
 
