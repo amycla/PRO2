@@ -1,15 +1,19 @@
+//clock colors
 let r = 0;
 let g = 0;
 let b = 0;
 
+//hour colors
 let hourR = 255;
 let hourG = 255;
 let hourB = 255;
 
+//minute colors
 let minuteR = 200;
 let minuteG = 200;
 let minuteB = 200;
 
+//second colors
 let secondR = 150;
 let secondG = 150;
 let secondB = 150;
@@ -21,6 +25,7 @@ x
 function draw() {
   background(r, g, b);
 
+  //setting up analogue clock
   let hr = nf(hour(), 2, 0);
   let mn = nf(minute(), 2, 0);
   let sc = nf(second(), 2, 0);
@@ -43,7 +48,7 @@ function draw() {
   text(mn, minuteX - 5, map(mn, 0, 60, 0, height) - 20);
   text(sc, secondX - 5, map(sc, 0, 60, 0, height) - 20);
 
-  //Spring - colors are green
+  //spring - colors are green
   if (m > 2 && m <= 5) {
     if (hr > 5 && hr <= 11) {
       r = 102;
@@ -63,7 +68,7 @@ function draw() {
       b = 23;
     }
   }
-  //Summer - colors are yellow
+  //summer - colors are yellow
   else if (m > 5 && m <= 8) {
     if (hr > 5 && hr <= 11) {
       r = 255;
@@ -83,7 +88,7 @@ function draw() {
       b = 4;
     }
   }
-  //Fall - colors are red
+  //fall - colors are red
   else if (m > 8 && m <= 10) {
     if (hr > 5 && hr <= 11) {
       r = 255;
@@ -103,7 +108,7 @@ function draw() {
       b = 0;
     }
   }
-  //Winter - colors are blue
+  //winter - colors are blue
   else if (m == 12 || m == 1) {
     if (hr > 5 && hr <= 11) {
       r = 82;
@@ -125,6 +130,7 @@ function draw() {
   }
 }
 
+//when mouse is pressed the colors of the bars change randomly
 function mousePressed() {
   hourR = random(255);
   hourG = random(255);
