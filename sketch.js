@@ -21,7 +21,7 @@ let secondB = 150;
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
-x
+
 function draw() {
   background(r, g, b);
 
