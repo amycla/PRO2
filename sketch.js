@@ -25,16 +25,18 @@ x
 function draw() {
   background(r, g, b);
 
-  //setting up analogue clock
+  //setting up clock
   let hr = nf(hour(), 2, 0);
   let mn = nf(minute(), 2, 0);
   let sc = nf(second(), 2, 0);
   let m = month();
 
+  //putting the clock bars at 1/4, 2/4 and 3/4ths of the screen
   let secondX = 0.75 * windowWidth;
   let minuteX = 0.5 * windowWidth;
   let hourX = 0.25 * windowWidth;
   
+  //the clock bars get mapped to the size of the screen
   noStroke();
   fill(hourR, hourG, hourB);
   rect(hourX - 150, 0, 300, map(hr, 0, 24, 0, height));
@@ -43,6 +45,7 @@ function draw() {
   fill(secondR, secondG, secondB);
   rect(secondX - 50, 0, 100, map(sc, 0, 60, 0, height));
 
+  //the text displaying the time also mapped
   fill(0);
   text(hr, hourX - 5, map(hr, 0, 24, 0, height) - 20);
   text(mn, minuteX - 5, map(mn, 0, 60, 0, height) - 20);
