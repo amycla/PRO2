@@ -51,7 +51,7 @@ function draw() {
   text(mn, minuteX - 5, map(mn, 0, 60, 0, height) - 20);
   text(sc, secondX - 5, map(sc, 0, 60, 0, height) - 20);
 
-  //spring - colors are green
+  //spring - green
   if (m > 2 && m <= 5) {
     if (hr > 5 && hr <= 11) {
       r = 102;
@@ -71,7 +71,7 @@ function draw() {
       b = 23;
     }
   }
-  //summer - colors are yellow
+  //summer - yellow
   else if (m > 5 && m <= 8) {
     if (hr > 5 && hr <= 11) {
       r = 255;
@@ -91,7 +91,7 @@ function draw() {
       b = 4;
     }
   }
-  //fall - colors are red
+  //fall - red
   else if (m > 8 && m <= 10) {
     if (hr > 5 && hr <= 11) {
       r = 255;
@@ -111,7 +111,7 @@ function draw() {
       b = 0;
     }
   }
-  //winter - colors are blue
+  //winter - blue
   else if (m == 12 || m == 1) {
     if (hr > 5 && hr <= 11) {
       r = 82;
